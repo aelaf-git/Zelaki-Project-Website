@@ -4,7 +4,14 @@ export default function Integrations() {
   return (
     <div className="mt-24 flex flex-col md:flex-row items-start md:space-x-10">
       <div className="md:w-6/12">
-        <Image className="md:w-8/12 mx-auto h-auto" src="/img/integrations.png" alt="Integrations" width={400} height={400} />
+        <Image
+          className="md:w-8/12 mx-auto h-auto"
+          src="/img/integrations.png"
+          alt="Integrations"
+          width={400}
+          height={400}
+          style={{ height: 'auto' }}
+        />
       </div>
       <div className="md:w-6/12">
         <div className="flex items-center space-x-20 mb-5">

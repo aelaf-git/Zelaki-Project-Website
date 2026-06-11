@@ -16,7 +16,14 @@ export default function About() {
       {/* Cards */}
       <div className="flex flex-col md:flex-row justify-center space-y-5 md:space-y-0 md:space-x-6 lg:space-x-10 mt-7">
         <div className="relative md:w-5/12">
-          <Image className="rounded-2xl w-full h-auto" src="/img/Rectangle 19.png" alt="For Instructors" width={600} height={400} />
+          <Image
+            className="rounded-2xl w-full h-auto"
+            src="/img/Rectangle 19.png"
+            alt="For Instructors"
+            width={600}
+            height={400}
+            style={{ height: 'auto' }}
+          />
           <div className="absolute bg-black bg-opacity-20 bottom-0 left-0 right-0 w-full h-full rounded-2xl">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
               <h3 className="uppercase text-white font-bold text-sm lg:text-xl mb-3">FOR INSTRUCTORS</h3>
@@ -28,7 +35,14 @@ export default function About() {
         </div>
 
         <div className="relative md:w-5/12">
-          <Image className="rounded-2xl w-full h-auto" src="/img/Rectangle 21.png" alt="For Students" width={600} height={400} />
+          <Image
+            className="rounded-2xl w-full h-auto"
+            src="/img/Rectangle 21.png"
+            alt="For Students"
+            width={600}
+            height={400}
+            style={{ height: 'auto' }}
+          />
           <div className="absolute bg-black bg-opacity-20 bottom-0 left-0 right-0 w-full h-full rounded-2xl">
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
               <h3 className="uppercase text-white font-bold text-sm lg:text-xl mb-3">FOR STUDENTS</h3>
@@ -65,6 +79,7 @@ export default function About() {
             alt="Teacher explaining"
             width={600}
             height={400}
+            style={{ height: 'auto' }}
           />
           <button className="bg-white w-14 h-14 rounded-full flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 focus:outline-none hover:scale-110 transition duration-300 ease-in-out z-50">
             <svg className="w-5 h-5 ml-1" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">

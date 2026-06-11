@@ -29,7 +29,14 @@ export default function Testimonials() {
         </button>
       </div>
       <div className="md:w-7/12">
-        <Image className="md:w-10/12 mx-auto h-auto" src="/img/testimonials.png" alt="Testimonials" width={600} height={500} />
+        <Image
+          className="md:w-10/12 mx-auto h-auto"
+          src="/img/testimonials.png"
+          alt="Testimonials"
+          width={600}
+          height={500}
+          style={{ height: 'auto' }}
+        />
       </div>
     </div>
   );

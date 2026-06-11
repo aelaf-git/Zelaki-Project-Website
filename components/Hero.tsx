@@ -39,7 +39,14 @@ export default function Hero() {
           />
           {/* Calendar */}
           <div className="absolute top-20 -left-6 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:-left-0 lg:top-52 floating-4">
-            <Image className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-16 w-auto" src="/img/calendar.svg" alt="Calendar" width={100} height={64} />
+            <Image
+              className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-16"
+              src="/img/calendar.svg"
+              alt="Calendar"
+              width={100}
+              height={64}
+              style={{ width: 'auto' }}
+            />
           </div>
           {/* Red chart */}
           <div className="absolute top-20 right-10 sm:right-24 sm:top-28 md:top-36 md:right-32 lg:top-32 lg:right-16 floating">
@@ -66,11 +73,25 @@ export default function Hero() {
           </div>
           {/* UX Class */}
           <div className="absolute bottom-14 -left-4 sm:left-2 sm:bottom-20 lg:bottom-24 lg:-left-4 floating">
-            <Image className="bg-white bg-opacity-80 rounded-lg h-20 sm:h-28 w-auto" src="/img/ux-class.svg" alt="UX Class" width={150} height={112} />
+            <Image
+              className="bg-white bg-opacity-80 rounded-lg h-20 sm:h-28"
+              src="/img/ux-class.svg"
+              alt="UX Class"
+              width={150}
+              height={112}
+              style={{ width: 'auto' }}
+            />
           </div>
           {/* Congrats */}
           <div className="absolute bottom-20 md:bottom-48 lg:bottom-52 -right-6 lg:right-8 floating-4">
-            <Image className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-16 w-auto" src="/img/congrat.svg" alt="Congratulations" width={150} height={64} />
+            <Image
+              className="bg-white bg-opacity-80 rounded-lg h-12 sm:h-16"
+              src="/img/congrat.svg"
+              alt="Congratulations"
+              width={150}
+              height={64}
+              style={{ width: 'auto' }}
+            />
           </div>
         </div>
       </div>

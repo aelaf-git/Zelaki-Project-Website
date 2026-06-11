@@ -8,7 +8,14 @@ export default function ClassroomTools() {
         <div className="md:w-7/12 relative">
           <div style={{ background: '#33EFA0' }} className="w-32 h-32 rounded-full absolute z-0 left-4 -top-12 animate-pulse" />
           <div style={{ background: '#33D9EF' }} className="w-5 h-5 rounded-full absolute z-0 left-36 -top-12 animate-ping" />
-          <Image className="relative z-50 floating w-full h-auto" src="/img/vcall.png" alt="Virtual class call" width={600} height={450} />
+          <Image
+            className="relative z-50 floating w-full h-auto"
+            src="/img/vcall.png"
+            alt="Virtual class call"
+            width={600}
+            height={450}
+            style={{ height: 'auto' }}
+          />
           <div style={{ background: '#5B61EB' }} className="w-36 h-36 rounded-full absolute z-0 right-16 -bottom-1 animate-pulse" />
           <div style={{ background: '#F56666' }} className="w-5 h-5 rounded-full absolute z-0 right-52 bottom-1 animate-ping" />
         </div>
@@ -58,13 +65,27 @@ export default function ClassroomTools() {
             Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.
           </p>
         </div>
-        <Image className="md:w-1/2 h-auto" src="/img/girl-with-books.png" alt="Girl with books" width={600} height={500} />
+        <Image
+          className="md:w-1/2 h-auto"
+          src="/img/girl-with-books.png"
+          alt="Girl with books"
+          width={600}
+          height={500}
+          style={{ height: 'auto' }}
+        />
       </div>
 
       {/* Assessments */}
       <div className="mt-20 flex flex-col-reverse md:flex-row items-center md:space-x-10">
         <div className="md:w-6/12">
-          <Image className="md:w-11/12 h-auto" src="/img/true-false.png" alt="True or False quiz" width={500} height={400} />
+          <Image
+            className="md:w-11/12 h-auto"
+            src="/img/true-false.png"
+            alt="True or False quiz"
+            width={500}
+            height={400}
+            style={{ height: 'auto' }}
+          />
         </div>
         <div className="md:w-6/12 md:transform md:-translate-y-20">
           <h2 className="font-semibold text-darken text-3xl lg:pr-64">
@@ -86,13 +107,27 @@ export default function ClassroomTools() {
             Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
           </p>
         </div>
-        <Image className="md:w-7/12 h-auto" src="/img/gradebook.png" alt="Gradebook" width={700} height={500} />
+        <Image
+          className="md:w-7/12 h-auto"
+          src="/img/gradebook.png"
+          alt="Gradebook"
+          width={700}
+          height={500}
+          style={{ height: 'auto' }}
+        />
       </div>
 
       {/* One-on-One Discussions */}
       <div className="mt-24 flex flex-col-reverse md:flex-row items-center md:space-x-10">
         <div className="md:w-7/12">
-          <Image className="md:w-11/12 h-auto" src="/img/discussion.png" alt="Discussion" width={600} height={450} />
+          <Image
+            className="md:w-11/12 h-auto"
+            src="/img/discussion.png"
+            alt="Discussion"
+            width={600}
+            height={450}
+            style={{ height: 'auto' }}
+          />
         </div>
         <div className="md:w-5/12 md:transform md:-translate-y-6">
           <h2 className="font-semibold text-darken text-3xl lg:pr-64">

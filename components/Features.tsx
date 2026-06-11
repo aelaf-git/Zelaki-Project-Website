@@ -1,5 +1,14 @@
+import { ReactNode } from 'react';
+
+interface Card {
+  bg: string;
+  title: string;
+  desc: string;
+  icon: ReactNode;
+}
+
 export default function Features() {
-  const cards = [
+  const cards: Card[] = [
     {
       bg: '#5B72EE',
       title: 'Online Billing, Invoicing, & Contracts',

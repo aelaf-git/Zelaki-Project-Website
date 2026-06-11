@@ -1,7 +1,13 @@
 import Image from 'next/image';
 
+interface Company {
+  name: string;
+  file: string;
+  extraClass: string;
+}
+
 export default function TrustedBy() {
-  const companies = [
+  const companies: Company[] = [
     { name: 'Google', file: 'google.svg', extraClass: '' },
     { name: 'Netflix', file: 'netflix.svg', extraClass: '' },
     { name: 'Airbnb', file: 'airbnb.svg', extraClass: '' },
@@ -19,11 +25,12 @@ export default function TrustedBy() {
         {companies.map((company) => (
           <div key={company.name} className={`transform ${company.extraClass}`}>
             <Image
-              className="h-7 w-auto"
+              className="h-7"
               src={`/img/company/${company.file}`}
               alt={company.name}
               width={80}
               height={28}
+              style={{ width: 'auto' }}
             />
           </div>
         ))}
