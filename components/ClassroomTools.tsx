@@ -14,14 +14,14 @@ export default function ClassroomTools() {
       number: 1,
       title: 'Collection',
       desc: 'Bottles gathered across Simien Mountains trails and campsites by local teams and coordinated with EWCA and AWF.',
-      placeholderText: 'Photo of plastic collection in the park — mule carrying bags, or volunteers gathering bottles',
+      placeholderText: 'Photo of plastic collection in the park: mule carrying bags, or volunteers gathering bottles',
       imageSrc: '/images/shraded-plastics.jpg'
     },
     {
       number: 2,
       title: 'Shredding',
       desc: 'A shredder designed and built in collaboration with students from the United States and Ethiopia at the Debark University workshop breaks bottles into uniform plastic flakes.',
-      placeholderText: 'Photo of the shredder machine — either the CAD render or the built machine in the workshop',
+      placeholderText: 'Photo of the shredder machine, either the CAD render or the built machine in the workshop',
       imageSrc: '/images/extruder.jpg'
     },
     {
@@ -34,15 +34,15 @@ export default function ClassroomTools() {
     {
       number: 4,
       title: 'Melt & Form',
-      desc: 'Injection molders and extruders — also built by U.S. and Ethiopian student teams — shape the plastic into souvenirs or pull it into fiber, depending on the pipeline.',
-      placeholderText: 'Photo of the injection molder or extruder — CAD render or built unit',
+      desc: 'Injection molders and extruders, also built by U.S. and Ethiopian student teams, shape the plastic into souvenirs or pull it into fiber, depending on the pipeline.',
+      placeholderText: 'Photo of the injection molder or extruder, CAD render or built unit',
       imageSrc: '/images/extruder.jpg'
     },
     {
       number: 5,
       title: 'Sale & Profit',
       desc: 'Community associations sell souvenirs to tourists and the university sells fiber to local markets. Revenue funds conservation and project operations.',
-      placeholderText: 'Photo of a finished souvenir product — the coaster, jewelry, or figurine on a clean surface',
+      placeholderText: 'Photo of a finished souvenir product: the coaster, jewelry, or figurine on a clean surface',
       imageSrc: '/images/shraded-plastics.jpg'
     }
   ];
@@ -58,7 +58,7 @@ export default function ClassroomTools() {
           A closed-loop pipeline from park to product
         </h2>
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-          Zelaki connects plastic collection in the field to a university-run recycling workshop, producing two income streams: tourist-facing souvenirs and locally-sold fiber — both manufactured entirely from waste recovered in the park. The machines that power this pipeline are built in collaboration with students from the United States and Ethiopia.
+          Zelaki connects plastic collection in the field to a university-run recycling workshop, producing two income streams: tourist-facing souvenirs and locally-sold fiber, both manufactured entirely from waste recovered in the park. The machines that power this pipeline are built in collaboration with students from the United States and Ethiopia.
         </p>
       </div>
 
@@ -67,7 +67,7 @@ export default function ClassroomTools() {
           Learning by building
         </h3>
         <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-          Student collaboration is central to Zelaki. We bring together engineering students from the United States and Ethiopia to design, weld, assemble, and test real recycling equipment — not in a classroom simulation, but on projects that protect national parks and support local communities. Students learn by doing work that matters.
+          Student collaboration is central to Zelaki. We bring together engineering students from the United States and Ethiopia to design, weld, assemble, and test real recycling equipment, not in a classroom simulation, but on projects that protect national parks and support local communities. Students learn by doing work that matters.
         </p>
       </div>
 

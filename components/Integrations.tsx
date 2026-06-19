@@ -15,7 +15,7 @@ export default function Integrations() {
           />
           <div className="absolute inset-0 bg-black/45 flex items-end p-6">
             <span className="text-white text-xs sm:text-sm font-semibold tracking-wide bg-black/60 px-3 py-1.5 rounded">
-              [IMAGE PLACEHOLDER: Map of Ethiopia with pins marking current and planned Zelaki workshop locations — from the &quot;Our Vision&quot; slide]
+              [IMAGE PLACEHOLDER: Map of Ethiopia with pins marking current and planned Zelaki workshop locations, from the &quot;Our Vision&quot; slide]
             </span>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function Integrations() {
             Starting in the Simiens. Built to scale across Ethiopia.
           </h2>
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
-            The Zelaki model is designed to replicate. Each new partner university becomes a recycling hub for a nearby national park or conservation area. The long-term vision is a national network — linking ecotourism waste streams to local manufacturing workshops at universities across Ethiopia.
+            The Zelaki model is designed to replicate. Each new partner university becomes a recycling hub for a nearby national park or conservation area. The long-term vision is a national network linking ecotourism waste streams to local manufacturing workshops at universities across Ethiopia.
           </p>
         </div>
 

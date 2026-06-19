@@ -1,30 +1,27 @@
-import Image from 'next/image';
-
 export default function Hero() {
   return (
     <div className="relative bg-slate-900 min-h-[85vh] flex flex-col justify-between overflow-hidden">
-      {/* Background Image Placeholder */}
+      {/* Background Video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/shraded-plastics.jpg"
-          alt="Simien Mountains Landscape Placeholder"
-          fill
-          className="object-cover opacity-40"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/shraded-plastics.jpg"
+          className="absolute inset-0 w-full h-full object-cover"
+          aria-hidden="true"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/40 to-slate-900/80" />
       </div>
 
       {/* Main Content */}
       <div className="relative z-10 max-w-screen-xl px-8 mx-auto flex flex-col items-center justify-center text-center flex-grow pt-32 pb-20">
-        {/* Eyebrow */}
-        <span className="text-lime-400 font-bold uppercase tracking-widest text-xs sm:text-sm mb-4 block" data-aos="fade-up">
-          Simien Mountains · Ethiopia
-        </span>
-        
         {/* Headline */}
         <h1 
-          className="max-w-4xl text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6 font-serif"
+          className="max-w-4xl text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6 font-serif drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -33,11 +30,11 @@ export default function Hero() {
         
         {/* Subheadline */}
         <p 
-          className="max-w-3xl text-slate-200 text-base sm:text-lg md:text-xl leading-relaxed mb-10"
+          className="max-w-2xl text-slate-100 text-base sm:text-lg leading-relaxed mb-8 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Zelaki collects plastic bottles threatening Ethiopia&apos;s national parks and transforms them into recycled souvenirs and fiber — funding conservation, employing communities, and cleaning the highlands one bottle at a time. At the heart of it all, students from the United States and Ethiopia design and build the recycling machines together, learning through real projects with lasting impact.
+          We collect plastic from Ethiopia&apos;s national parks and turn it into recycled souvenirs and fiber, with machines built by students from the United States and Ethiopia.
         </p>
         
         {/* Buttons */}

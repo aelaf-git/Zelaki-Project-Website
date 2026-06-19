@@ -38,7 +38,7 @@ export default function ImpactBanner() {
 
         {/* Supporting Copy */}
         <p className="max-w-2xl text-slate-300 text-base sm:text-lg leading-relaxed px-4" data-aos="fade-up">
-          Generated annually inside Simien Mountains National Park by tourists — with no collection system in place.
+          Generated annually inside Simien Mountains National Park by tourists, with no collection system in place.
         </p>
       </div>
     </div>

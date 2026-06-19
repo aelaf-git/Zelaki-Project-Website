@@ -15,7 +15,7 @@ export default function Features() {
       name: 'Coaster',
       market: 'Tourist',
       marketType: 'Tourist',
-      desc: 'Injection-molded coaster bearing the walia ibex — the park\'s iconic resident. Sold directly to tourists at Simien Mountains lodges and entry points.',
+      desc: 'Injection-molded coaster bearing the walia ibex, the park\'s iconic resident. Sold directly to tourists at Simien Mountains lodges and entry points.',
       placeholderText: 'Photo of the blue circular coaster with the ibex engraving',
       imageSrc: '/images/shraded-plastics.jpg'
     },
@@ -39,8 +39,8 @@ export default function Features() {
       name: 'Figurine',
       market: 'Tourist',
       marketType: 'Tourist',
-      desc: 'Molded gelada and walia ibex figurines — the park\'s most recognizable wildlife, cast from the same plastic that once threatened them.',
-      placeholderText: 'Photo of the figurine mold and finished piece — the red clay mold halves with the animal shape',
+      desc: 'Molded gelada and walia ibex figurines, the park\'s most recognizable wildlife, cast from the same plastic that once threatened them.',
+      placeholderText: 'Photo of the figurine mold and finished piece: the red clay mold halves with the animal shape',
       imageSrc: '/images/extruder.jpg'
     },
     {

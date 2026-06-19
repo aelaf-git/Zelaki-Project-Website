@@ -14,7 +14,7 @@ export default function News() {
             Join the closed-loop revolution
           </h2>
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-10">
-            Whether you&apos;re a university looking to replicate the model, an NGO working in conservation, or a funder interested in circular economy solutions — we want to hear from you.
+            Whether you&apos;re a university looking to replicate the model, an NGO working in conservation, or a funder interested in circular economy solutions, we want to hear from you.
           </p>
 
           {/* Primary CTA - Email */}
