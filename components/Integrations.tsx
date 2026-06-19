@@ -41,11 +41,15 @@ export default function Integrations() {
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center space-x-2">
                 <span className="text-green-500">✓</span>
+                <span>Simien Mountains National Park</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <span className="text-green-500">✓</span>
                 <span>Debark (Simien Mountains)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-green-500">✓</span>
-                <span>Addis Ababa (CTBE Workshop)</span>
+                <span>Addis Ababa University College of Technology & The Built Environment</span>
               </li>
             </ul>
           </div>

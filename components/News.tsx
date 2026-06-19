@@ -48,7 +48,7 @@ export default function News() {
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-white transition border border-neutral-700 rounded-full px-5 py-2"
             >
-              CTBE →
+              AAU CTBE →
             </a>
           </div>
         </div>

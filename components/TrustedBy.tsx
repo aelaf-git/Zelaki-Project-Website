@@ -1,38 +1,19 @@
+'use client';
+
+import Image from 'next/image';
+
+const partners = [
+  { src: '/partnerships/Addis-Ababa-University.png', alt: 'Addis Ababa University' },
+  { src: '/partnerships/ASU.jpeg', alt: 'Arizona State University' },
+  { src: '/partnerships/Debark-University.jpeg', alt: 'Debark University' },
+  { src: '/partnerships/EWCA.jpg', alt: 'Ethiopian Wildlife Conservation Authority' },
+  { src: '/partnerships/Gonder-University.jpeg', alt: 'University of Gondar' },
+  { src: '/partnerships/simien-mountains-national-park.jpeg', alt: 'Simien Mountains National Park' },
+];
+
 export default function TrustedBy() {
-  const partners = [
-    { name: 'Arizona State University', category: 'Academic' },
-    { name: 'Addis Ababa College of Technology and Built Environment (CTBE)', category: 'Academic' },
-    { name: 'University of Gondar', category: 'Academic' },
-    { name: 'Debark University', category: 'Academic' },
-    { name: 'Ethiopian Wildlife Conservation Authority', category: 'Government' },
-    { name: 'African Wildlife Foundation', category: 'NGO' },
-    { name: 'Frankfurt Zoological Society', category: 'NGO' },
-    { name: 'Simien Mountains Gelada Research Project', category: 'Research' },
-    { name: 'Limalimo Ecolodge', category: 'Industry' },
-    { name: 'Debark Association of Women with Disabilities', category: 'Community' },
-    { name: 'Techtonga', category: 'Industry' },
-    { name: 'National Science Foundation (NSF)', category: 'Funder' },
-    { name: 'Fulbright Program', category: 'Funder' },
-    { name: 'ASU Global Futures Laboratory', category: 'Academic' },
-    { name: 'ASU School of Human Evolution & Social Change', category: 'Academic' },
-  ];
-
-  const getCategoryColor = (cat: string) => {
-    switch (cat) {
-      case 'Academic': return 'bg-blue-50 text-blue-700 border-blue-200';
-      case 'Government': return 'bg-emerald-50 text-emerald-700 border-emerald-200';
-      case 'NGO': return 'bg-lime-50 text-lime-700 border-lime-200';
-      case 'Research': return 'bg-violet-50 text-violet-700 border-violet-200';
-      case 'Industry': return 'bg-green-50 text-green-700 border-green-200';
-      case 'Community': return 'bg-rose-50 text-rose-700 border-rose-200';
-      case 'Funder': return 'bg-teal-50 text-teal-700 border-teal-200';
-      default: return 'bg-gray-50 text-gray-700 border-gray-200';
-    }
-  };
-
   return (
     <div id="partners" className="mt-32 scroll-mt-10">
-      {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-2">
           Partners &amp; Supporters
@@ -45,17 +26,23 @@ export default function TrustedBy() {
         </p>
       </div>
 
-      {/* Partners Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-8">
         {partners.map((partner, i) => (
           <div
-            key={i}
-            className={`flex flex-col items-center justify-center p-5 rounded-xl border transition-all duration-300 text-center ${getCategoryColor(partner.category)}`}
+            key={partner.src}
+            className="relative flex items-center justify-center p-4 sm:p-6 rounded-xl border border-gray-200 bg-white h-32 sm:h-36"
             data-aos="fade-up"
             data-aos-delay={i * 30}
           >
-            <span className="font-bold text-sm leading-tight mb-2">{partner.name}</span>
-            <span className="text-xs font-medium opacity-75 uppercase tracking-wider">{partner.category}</span>
+            <div className="relative w-full h-full">
+              <Image
+                src={partner.src}
+                alt={partner.alt}
+                fill
+                className="object-contain"
+                sizes="(max-width: 640px) 50vw, 33vw"
+              />
+            </div>
           </div>
         ))}
       </div>

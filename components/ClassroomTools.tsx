@@ -27,19 +27,20 @@ export default function ClassroomTools() {
       number: 3,
       title: 'Wash & Dry',
       desc: 'Industrial washing and hot-air drying removes contaminants and prepares the flake for molding.',
-      imageSrc: '/images/shraded-plastics.jpg'
+      imageSrc: '/images/wash-&-Dray.png'
     },
     {
       number: 4,
       title: 'Melt & Form',
       desc: 'Injection molders and extruders, also built by U.S. and Ethiopian student teams, shape the plastic into souvenirs or pull it into fiber, depending on the pipeline.',
-      imageSrc: '/images/extruder.jpg'
+      imageSrc: '/images/extruder.jpg',
+      videoSrc: '/videos/melting.mp4',
     },
     {
       number: 5,
       title: 'Sale & Profit',
       desc: 'Community associations sell souvenirs to tourists and the university sells fiber to local markets. Revenue funds conservation and project operations.',
-      imageSrc: '/images/shraded-plastics.jpg'
+      imageSrc: '/images/sales.jpg'
     }
   ];
 
