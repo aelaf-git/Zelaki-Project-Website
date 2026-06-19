@@ -34,12 +34,12 @@ export default function TrustedBy() {
     <div id="partners" className="mt-32 scroll-mt-10">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-12">
-        <span className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
+        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-2">
           Partners &amp; Supporters
-        </span>
-        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-4">
-          Backed by institutions that believe in the mission
         </h2>
+        <p className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-4">
+          Backed by institutions that believe in the mission
+        </p>
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
           Zelaki is supported by universities, conservation agencies, funding bodies, and local enterprises across Ethiopia and the United States.
         </p>
@@ -50,7 +50,7 @@ export default function TrustedBy() {
         {partners.map((partner, i) => (
           <div
             key={i}
-            className={`flex flex-col items-center justify-center p-5 rounded-xl border transition-all duration-300 hover:shadow-md text-center ${getCategoryColor(partner.category)}`}
+            className={`flex flex-col items-center justify-center p-5 rounded-xl border transition-all duration-300 text-center ${getCategoryColor(partner.category)}`}
             data-aos="fade-up"
             data-aos-delay={i * 30}
           >

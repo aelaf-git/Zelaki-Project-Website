@@ -3,14 +3,14 @@ export default function ImpactBanner() {
     <div className="bg-black text-white w-full py-16 px-8 relative">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center text-center">
         {/* Label */}
-        <span className="text-lime-400 font-bold uppercase tracking-widest text-xs sm:text-sm mb-8 block">
+        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-white mb-2">
           The scale of the problem
-        </span>
+        </h2>
 
         {/* Stats Grid */}
         <div className="grid md:grid-cols-3 gap-8 items-center justify-center w-full max-w-4xl mb-8">
           {/* Stat 1 */}
-          <div className="flex flex-col items-center p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800/50 shadow-xl" data-aos="fade-right">
+          <div className="flex flex-col items-center p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800/50" data-aos="fade-right">
             <span className="text-4xl sm:text-5xl font-extrabold text-lime-500 mb-2 font-serif">
               750 m³
             </span>
@@ -26,7 +26,7 @@ export default function ImpactBanner() {
           </div>
 
           {/* Stat 2 */}
-          <div className="flex flex-col items-center p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800/50 shadow-xl" data-aos="fade-left">
+          <div className="flex flex-col items-center p-6 bg-neutral-900/60 rounded-2xl border border-neutral-800/50" data-aos="fade-left">
             <span className="text-4xl sm:text-5xl font-extrabold text-lime-500 mb-2 font-serif">
               121
             </span>

@@ -5,7 +5,6 @@ interface Product {
   market: string;
   marketType: 'Tourist' | 'International' | 'Local' | 'Tourist / International';
   desc: string;
-  placeholderText: string;
   imageSrc: string;
 }
 
@@ -16,7 +15,6 @@ export default function Features() {
       market: 'Tourist',
       marketType: 'Tourist',
       desc: 'Injection-molded coaster bearing the walia ibex, the park\'s iconic resident. Sold directly to tourists at Simien Mountains lodges and entry points.',
-      placeholderText: 'Photo of the blue circular coaster with the ibex engraving',
       imageSrc: '/images/shraded-plastics.jpg'
     },
     {
@@ -24,7 +22,6 @@ export default function Features() {
       market: 'Tourist / International',
       marketType: 'Tourist / International',
       desc: '3D-relief map of the Simien plateau, molded from recovered PET plastic. A functional keepsake that tells the story of the landscape.',
-      placeholderText: 'Photo of the 3D-printed topographic map of Simien Mountains National Park',
       imageSrc: '/images/extruder.jpg'
     },
     {
@@ -32,7 +29,6 @@ export default function Features() {
       market: 'International',
       marketType: 'International',
       desc: 'Beads and pendants hand-finished by the Debark Association of Women with Disabilities, who add value and earn income from the base souvenir pipeline.',
-      placeholderText: 'Photo of the teal recycled-plastic bead necklace held in hand',
       imageSrc: '/images/shraded-plastics.jpg'
     },
     {
@@ -40,7 +36,6 @@ export default function Features() {
       market: 'Tourist',
       marketType: 'Tourist',
       desc: 'Molded gelada and walia ibex figurines, the park\'s most recognizable wildlife, cast from the same plastic that once threatened them.',
-      placeholderText: 'Photo of the figurine mold and finished piece: the red clay mold halves with the animal shape',
       imageSrc: '/images/extruder.jpg'
     },
     {
@@ -48,7 +43,6 @@ export default function Features() {
       market: 'Local',
       marketType: 'Local',
       desc: 'PET fiber extruded and sold to local textile markets. The fiber pipeline runs parallel to the souvenir pipeline and creates a circular economy product for the Debark and Gondar markets.',
-      placeholderText: 'Photo of the white fluffy recycled fiber output from the extruder',
       imageSrc: '/images/shraded-plastics.jpg'
     }
   ];
@@ -70,12 +64,12 @@ export default function Features() {
     <div id="products" className="mt-32 scroll-mt-10">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <span className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
+        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-2">
           What We Make
-        </span>
-        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-4">
-          Recycled plastic, reimagined as highland craft
         </h2>
+        <p className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-4">
+          Recycled plastic, reimagined as highland craft
+        </p>
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
           Each product carries the story of its origin: Ethiopian highlands turned into objects visitors take home and communities sell to sustain the park that produced them.
         </p>
@@ -86,24 +80,18 @@ export default function Features() {
         {products.map((product, i) => (
           <div 
             key={i} 
-            className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-xl transition duration-300"
+            className="bg-white rounded-2xl overflow-hidden border border-gray-100 flex flex-col justify-between transition duration-300"
             data-aos="fade-up"
             data-aos-delay={i * 100}
           >
             <div>
-              {/* Product Image Placeholder */}
               <div className="relative w-full h-[220px] bg-gray-100">
                 <Image
                   src={product.imageSrc}
                   alt={product.name}
                   fill
-                  className="object-cover filter saturate-50 hover:saturate-100 transition duration-300"
+                  className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-end p-4">
-                  <span className="text-white text-xs font-semibold bg-black/60 px-2 py-1 rounded">
-                    [IMAGE PLACEHOLDER: {product.placeholderText}]
-                  </span>
-                </div>
               </div>
 
               {/* Product Content */}

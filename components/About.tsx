@@ -5,12 +5,12 @@ export default function About() {
     <div className="mt-28 scroll-mt-10" id="problem">
       {/* Heading */}
       <div className="text-center max-w-screen-md mx-auto mb-16">
-        <span className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
+        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-2">
           The Problem
-        </span>
-        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-4">
-          A UNESCO World Heritage site drowning in plastic
         </h2>
+        <p className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-4">
+          A UNESCO World Heritage site drowning in plastic
+        </p>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-12 items-start">
@@ -25,7 +25,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200 bg-black">
+          <div className="relative rounded-2xl overflow-hidden border border-gray-200 bg-black">
             <video
               autoPlay
               muted
@@ -43,7 +43,7 @@ export default function About() {
 
         {/* Right Column - Photo & Callout Card */}
         <div className="w-full lg:w-5/12 space-y-8" data-aos="fade-left">
-          <div className="relative rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+          <div className="relative rounded-2xl overflow-hidden border border-gray-200">
             <Image
               className="w-full h-[280px] sm:h-[320px] object-cover"
               src="/images/problem2.JPG"
@@ -54,7 +54,7 @@ export default function About() {
           </div>
 
           {/* Callout Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-lime-500 relative overflow-hidden">
+          <div className="bg-white rounded-2xl p-8 border-l-8 border-lime-500 relative overflow-hidden">
             <div className="absolute right-0 top-0 translate-x-4 -translate-y-4 opacity-5 text-gray-800 text-9xl font-bold select-none font-serif">
               750
             </div>

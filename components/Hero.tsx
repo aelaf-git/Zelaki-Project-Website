@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-screen-xl px-8 mx-auto flex flex-col items-center justify-center text-center flex-grow pt-32 pb-20">
         {/* Headline */}
         <h1 
-          className="max-w-4xl text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6 font-serif drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
+          className="max-w-4xl text-white text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight mb-6 font-serif"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -29,7 +29,7 @@ export default function Hero() {
         
         {/* Subheadline */}
         <p 
-          className="max-w-2xl text-neutral-100 text-base sm:text-lg leading-relaxed mb-8 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+          className="max-w-2xl text-neutral-100 text-base sm:text-lg leading-relaxed mb-8"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -44,13 +44,13 @@ export default function Hero() {
         >
           <a
             href="#solution"
-            className="w-full sm:w-auto bg-lime-500 text-white font-bold text-lg rounded-full py-4 px-8 shadow-lg transform transition hover:scale-105 duration-200 hover:bg-lime-600 focus:outline-none text-center"
+            className="w-full sm:w-auto bg-lime-500 text-white font-bold text-lg rounded-full py-4 px-8 transition duration-200 hover:bg-lime-600 focus:outline-none text-center"
           >
             See How It Works
           </a>
           <a
             href="#get-involved"
-            className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold text-lg rounded-full py-4 px-8 shadow-md transform transition hover:scale-105 duration-200 hover:bg-white hover:text-black focus:outline-none text-center"
+            className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold text-lg rounded-full py-4 px-8 transition duration-200 hover:bg-white hover:text-black focus:outline-none text-center"
           >
             Partner With Us
           </a>

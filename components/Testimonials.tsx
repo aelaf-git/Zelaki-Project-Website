@@ -39,12 +39,12 @@ export default function Testimonials() {
     <div id="team" className="mt-32 scroll-mt-10">
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <span className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
+        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-2">
           The Team
-        </span>
-        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-4">
-          A cross-continental collaboration
         </h2>
+        <p className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-4">
+          A cross-continental collaboration
+        </p>
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
           Engineering students from the United States and Ethiopia work side by side with conservation ecologists and community partners from Arizona State University, Addis Ababa College of Technology and Built Environment (CTBE), Debark University, and Gondar University, designing, building, and iterating on the recycling machines together in Addis Ababa. This cross-continental collaboration is central to Zelaki: we want students to learn by working on real projects that make a difference.
         </p>
@@ -52,36 +52,25 @@ export default function Testimonials() {
 
       {/* Team Media Row */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-        {/* Full Team Image Placeholder */}
-        <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 group">
+        {/* Team Media */}
+        <div className="relative rounded-2xl overflow-hidden border border-gray-200">
           <Image
-            className="w-full h-[280px] sm:h-[350px] object-cover filter saturate-50 hover:saturate-100 transition duration-500"
+            className="w-full h-[280px] sm:h-[350px] object-cover"
             src="/images/shraded-plastics.jpg"
             alt="Full Zelaki Team"
             width={600}
             height={350}
           />
-          <div className="absolute inset-0 bg-black/45 flex items-end p-6">
-            <span className="text-white text-xs sm:text-sm font-semibold tracking-wide bg-black/60 px-3 py-1.5 rounded">
-              [IMAGE PLACEHOLDER: Group photo of the full team in front of the CTBE sign, from the &quot;Our Team&quot; slide]
-            </span>
-          </div>
         </div>
 
-        {/* Workshop Image Placeholder */}
-        <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 group">
+        <div className="relative rounded-2xl overflow-hidden border border-gray-200">
           <Image
-            className="w-full h-[280px] sm:h-[350px] object-cover filter saturate-50 hover:saturate-100 transition duration-500"
+            className="w-full h-[280px] sm:h-[350px] object-cover"
             src="/images/extruder.jpg"
             alt="Workshop Activities"
             width={600}
             height={350}
           />
-          <div className="absolute inset-0 bg-black/45 flex items-end p-6">
-            <span className="text-white text-xs sm:text-sm font-semibold tracking-wide bg-black/60 px-3 py-1.5 rounded">
-              [IMAGE PLACEHOLDER: Workshop photos showing students building machines: welding, assembling the injection molder frame, testing the extruder]
-            </span>
-          </div>
         </div>
       </div>
 
@@ -92,7 +81,7 @@ export default function Testimonials() {
           {team.map((member, i) => (
             <div 
               key={i} 
-              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition duration-300"
+              className="bg-white rounded-xl p-6 border border-gray-100 flex flex-col justify-between transition duration-300"
               data-aos="fade-up"
               data-aos-delay={i * 50}
             >
