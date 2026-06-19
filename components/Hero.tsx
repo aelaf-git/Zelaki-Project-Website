@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="relative bg-slate-900 min-h-[85vh] flex flex-col justify-between overflow-hidden">
+    <div className="relative bg-black min-h-[85vh] flex flex-col justify-between overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video
@@ -8,13 +8,12 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/images/shraded-plastics.jpg"
           className="absolute inset-0 w-full h-full object-cover"
           aria-hidden="true"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/40 to-slate-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/40 to-black/80" />
       </div>
 
       {/* Main Content */}
@@ -30,7 +29,7 @@ export default function Hero() {
         
         {/* Subheadline */}
         <p 
-          className="max-w-2xl text-slate-100 text-base sm:text-lg leading-relaxed mb-8 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+          className="max-w-2xl text-neutral-100 text-base sm:text-lg leading-relaxed mb-8 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -51,7 +50,7 @@ export default function Hero() {
           </a>
           <a
             href="#get-involved"
-            className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold text-lg rounded-full py-4 px-8 shadow-md transform transition hover:scale-105 duration-200 hover:bg-white hover:text-slate-900 focus:outline-none text-center"
+            className="w-full sm:w-auto bg-transparent border-2 border-white text-white font-bold text-lg rounded-full py-4 px-8 shadow-md transform transition hover:scale-105 duration-200 hover:bg-white hover:text-black focus:outline-none text-center"
           >
             Partner With Us
           </a>
@@ -59,7 +58,7 @@ export default function Hero() {
       </div>
 
       {/* Wave divider transitioning to the next section */}
-      <div className="text-slate-900 z-10 relative">
+      <div className="text-black z-10 relative">
         <svg className="h-12 sm:h-20 md:h-28 w-full" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor" />
         </svg>

@@ -1,7 +1,7 @@
 export default function News() {
   return (
     <div id="get-involved" className="mt-32 scroll-mt-10">
-      <div className="bg-slate-900 rounded-3xl px-8 sm:px-16 py-16 sm:py-20 text-center relative overflow-hidden">
+      <div className="bg-black rounded-3xl px-8 sm:px-16 py-16 sm:py-20 text-center relative overflow-hidden">
         {/* Decorative accents */}
         <div className="absolute top-0 left-0 w-40 h-40 bg-lime-500/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-56 h-56 bg-lime-500/5 rounded-full translate-x-1/3 translate-y-1/3" />
@@ -13,7 +13,7 @@ export default function News() {
           <h2 className="text-3xl sm:text-4xl font-bold font-serif text-white mb-6">
             Join the closed-loop revolution
           </h2>
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-10">
+          <p className="text-neutral-300 text-base sm:text-lg leading-relaxed mb-10">
             Whether you&apos;re a university looking to replicate the model, an NGO working in conservation, or a funder interested in circular economy solutions, we want to hear from you.
           </p>
 
@@ -34,7 +34,7 @@ export default function News() {
               href="https://shesc.asu.edu"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
+              className="text-neutral-400 hover:text-white transition border border-neutral-700 rounded-full px-5 py-2"
             >
               ASU SHESC →
             </a>
@@ -42,7 +42,7 @@ export default function News() {
               href="https://globalfutures.asu.edu"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
+              className="text-neutral-400 hover:text-white transition border border-neutral-700 rounded-full px-5 py-2"
             >
               ASU Global Futures Lab →
             </a>
@@ -50,7 +50,7 @@ export default function News() {
               href="https://www.aait.edu.et"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
+              className="text-neutral-400 hover:text-white transition border border-neutral-700 rounded-full px-5 py-2"
             >
               CTBE →
             </a>
