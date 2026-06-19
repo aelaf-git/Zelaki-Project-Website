@@ -15,35 +15,35 @@ export default function Features() {
       market: 'Tourist',
       marketType: 'Tourist',
       desc: 'Injection-molded coaster bearing the walia ibex, the park\'s iconic resident. Sold directly to tourists at Simien Mountains lodges and entry points.',
-      imageSrc: '/images/shraded-plastics.jpg'
+      imageSrc: '/images/products/coaster.png'
     },
     {
       name: 'Topographic Map',
       market: 'Tourist / International',
       marketType: 'Tourist / International',
       desc: '3D-relief map of the Simien plateau, molded from recovered PET plastic. A functional keepsake that tells the story of the landscape.',
-      imageSrc: '/images/extruder.jpg'
+      imageSrc: '/images/products/topography-map.png'
     },
     {
       name: 'Jewelry',
       market: 'International',
       marketType: 'International',
       desc: 'Beads and pendants hand-finished by the Debark Association of Women with Disabilities, who add value and earn income from the base souvenir pipeline.',
-      imageSrc: '/images/shraded-plastics.jpg'
+      imageSrc: '/images/products/jewelry.png'
     },
     {
       name: 'Figurine',
       market: 'Tourist',
       marketType: 'Tourist',
       desc: 'Molded gelada and walia ibex figurines, the park\'s most recognizable wildlife, cast from the same plastic that once threatened them.',
-      imageSrc: '/images/extruder.jpg'
+      imageSrc: '/images/products/figurine.png'
     },
     {
       name: 'Recycled Fiber',
       market: 'Local',
       marketType: 'Local',
       desc: 'PET fiber extruded and sold to local textile markets. The fiber pipeline runs parallel to the souvenir pipeline and creates a circular economy product for the Debark and Gondar markets.',
-      imageSrc: '/images/shraded-plastics.jpg'
+      imageSrc: '/images/products/recycled-fiber.png'
     }
   ];
 
@@ -90,7 +90,7 @@ export default function Features() {
                   src={product.imageSrc}
                   alt={product.name}
                   fill
-                  className="object-cover"
+                  className="object-contain p-4"
                 />
               </div>
 
