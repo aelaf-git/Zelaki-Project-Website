@@ -46,7 +46,7 @@ export default function Testimonials() {
           A cross-continental collaboration
         </h2>
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-          Engineering students, conservation ecologists, and community partners from Arizona State University, Addis Ababa University, Debark University, and Gondar University — designing, building, and iterating together in Addis Ababa.
+          Engineering students from the United States and Ethiopia work side by side with conservation ecologists and community partners from Arizona State University, Addis Ababa University, Debark University, and Gondar University — designing, building, and iterating on the recycling machines together in Addis Ababa. This cross-continental collaboration is central to Zelaki: we want students to learn by working on real projects that make a difference.
         </p>
       </div>
 

@@ -20,7 +20,7 @@ export default function ClassroomTools() {
     {
       number: 2,
       title: 'Shredding',
-      desc: 'A student-built shredder at the Debark University workshop breaks bottles into uniform plastic flakes.',
+      desc: 'A shredder designed and built in collaboration with students from the United States and Ethiopia at the Debark University workshop breaks bottles into uniform plastic flakes.',
       placeholderText: 'Photo of the shredder machine — either the CAD render or the built machine in the workshop',
       imageSrc: '/images/extruder.jpg'
     },
@@ -34,7 +34,7 @@ export default function ClassroomTools() {
     {
       number: 4,
       title: 'Melt & Form',
-      desc: 'An injection molder or extruder shapes the plastic into souvenirs or pulls it into fiber, depending on the pipeline.',
+      desc: 'Injection molders and extruders — also built by U.S. and Ethiopian student teams — shape the plastic into souvenirs or pull it into fiber, depending on the pipeline.',
       placeholderText: 'Photo of the injection molder or extruder — CAD render or built unit',
       imageSrc: '/images/extruder.jpg'
     },
@@ -58,7 +58,16 @@ export default function ClassroomTools() {
           A closed-loop pipeline from park to product
         </h2>
         <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-          Zelaki connects plastic collection in the field to a university-run recycling workshop, producing two income streams: tourist-facing souvenirs and locally-sold fiber — both manufactured entirely from waste recovered in the park.
+          Zelaki connects plastic collection in the field to a university-run recycling workshop, producing two income streams: tourist-facing souvenirs and locally-sold fiber — both manufactured entirely from waste recovered in the park. The machines that power this pipeline are built in collaboration with students from the United States and Ethiopia.
+        </p>
+      </div>
+
+      <div className="max-w-3xl mx-auto mb-20 bg-lime-50 border border-lime-200 rounded-2xl p-6 sm:p-8 text-center" data-aos="fade-up">
+        <h3 className="text-lg sm:text-xl font-bold font-serif text-darken mb-3">
+          Learning by building
+        </h3>
+        <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
+          Student collaboration is central to Zelaki. We bring together engineering students from the United States and Ethiopia to design, weld, assemble, and test real recycling equipment — not in a classroom simulation, but on projects that protect national parks and support local communities. Students learn by doing work that matters.
         </p>
       </div>
 

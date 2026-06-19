@@ -37,7 +37,7 @@ export default function Hero() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Zelaki collects plastic bottles threatening Ethiopia's national parks and transforms them into recycled souvenirs and fiber — funding conservation, employing communities, and cleaning the highlands one bottle at a time.
+          Zelaki collects plastic bottles threatening Ethiopia&apos;s national parks and transforms them into recycled souvenirs and fiber — funding conservation, employing communities, and cleaning the highlands one bottle at a time. At the heart of it all, students from the United States and Ethiopia design and build the recycling machines together, learning through real projects with lasting impact.
         </p>
         
         {/* Buttons */}
