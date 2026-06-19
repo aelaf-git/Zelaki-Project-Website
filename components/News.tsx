@@ -1,95 +1,62 @@
-import Image from 'next/image';
-
-interface Article {
-  img: string;
-  alt: string;
-  tag: string;
-  title: string;
-  excerpt: string;
-}
-
 export default function News() {
-  const articles: Article[] = [
-    {
-      img: '/img/children-laptop.png',
-      alt: 'Children on laptop',
-      tag: 'PRESS RELEASE',
-      title: 'Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand',
-      excerpt: 'Class Technologies Inc., the company that created Class,...',
-    },
-    {
-      img: '/img/girl-laptop.png',
-      alt: 'Girl on laptop',
-      tag: 'NEWS',
-      title: "Zoom's earliest investors are betting millions on a better Zoom for schools",
-      excerpt: 'Zoom was never created to be a consumer product. Nonetheless, the...',
-    },
-    {
-      img: '/img/cat-laptop.png',
-      alt: 'Cat on laptop',
-      tag: 'NEWS',
-      title: 'Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms',
-      excerpt: 'This year, investors have reaped big financial returns from betting on Zoom...',
-    },
-  ];
-
   return (
-    <>
-      {/* Heading */}
-      <div className="mt-16 text-center">
-        <h2 className="text-darken text-2xl font-semibold">Latest News and Resources</h2>
-        <p className="text-gray-500 my-5">See the developments that have occurred to Skillines in the world</p>
-      </div>
+    <div id="get-involved" className="mt-32 scroll-mt-10">
+      <div className="bg-slate-900 rounded-3xl px-8 sm:px-16 py-16 sm:py-20 text-center relative overflow-hidden">
+        {/* Decorative accents */}
+        <div className="absolute top-0 left-0 w-40 h-40 bg-lime-500/10 rounded-full -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-56 h-56 bg-lime-500/5 rounded-full translate-x-1/3 translate-y-1/3" />
 
-      {/* Articles */}
-      <div className="my-14 flex flex-col lg:flex-row lg:space-x-20">
-        {/* Featured article */}
-        <div className="lg:w-6/12">
-          <Image
-            className="w-full mb-6 h-auto rounded-xl"
-            src="/img/laptop-news.png"
-            alt="Latest news"
-            width={600}
-            height={400}
-            style={{ height: 'auto' }}
-          />
-          <span className="bg-yellow-300 text-darken font-semibold px-4 py-px text-sm rounded-full">NEWS</span>
-          <h3 className="text-gray-800 font-semibold my-3 text-xl">
-            Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution
-          </h3>
-          <p className="text-gray-500 mb-3">
-            Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
+        <div className="relative z-10 max-w-2xl mx-auto">
+          <span className="text-lime-400 font-bold uppercase tracking-widest text-xs sm:text-sm mb-4 block">
+            Get Involved
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-bold font-serif text-white mb-6">
+            Join the closed-loop revolution
+          </h2>
+          <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-10">
+            Whether you&apos;re a university looking to replicate the model, an NGO working in conservation, or a funder interested in circular economy solutions — we want to hear from you.
           </p>
-          <a href="#" className="underline">Read more</a>
-        </div>
 
-        {/* Side articles */}
-        <div className="lg:w-7/12 flex flex-col justify-between mt-12 space-y-5 lg:space-y-0 lg:mt-0">
-          {articles.map((article, i) => (
-            <div key={i} className="flex space-x-5">
-              <div className="w-4/12">
-                <div className="relative">
-                  <Image
-                    className="rounded-xl w-full h-auto"
-                    src={article.img}
-                    alt={article.alt}
-                    width={200}
-                    height={150}
-                    style={{ height: 'auto' }}
-                  />
-                  <span className="absolute bottom-2 right-2 bg-yellow-300 text-darken font-semibold px-4 py-px text-sm rounded-full hidden sm:block">
-                    {article.tag}
-                  </span>
-                </div>
-              </div>
-              <div className="w-8/12">
-                <h3 className="text-gray-800 text-sm sm:text-lg font-semibold">{article.title}</h3>
-                <p className="text-gray-500 my-2 sm:my-4 text-xs sm:text-md">{article.excerpt}</p>
-              </div>
-            </div>
-          ))}
+          {/* Primary CTA - Email */}
+          <a
+            href="mailto:zelaki.plastic@gmail.com"
+            className="inline-flex items-center space-x-3 bg-lime-500 text-white font-bold text-lg rounded-full py-4 px-10 shadow-lg transform transition hover:scale-105 duration-200 hover:bg-lime-600 focus:outline-none mb-8"
+          >
+            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span>zelaki.plastic@gmail.com</span>
+          </a>
+
+          {/* Secondary Links */}
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <a
+              href="https://shesc.asu.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
+            >
+              ASU SHESC →
+            </a>
+            <a
+              href="https://globalfutures.asu.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
+            >
+              ASU Global Futures Lab →
+            </a>
+            <a
+              href="https://www.aait.edu.et"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
+            >
+              AAiT →
+            </a>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -9,9 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: 'Skilline – Studying Online is now much easier',
+  title: 'Zelaki Project',
   description:
-    'Skilline is an interesting platform that will teach you in a more interactive way. All-in-one cloud software for schools and educators.',
+    'Zelaki Project is a collaborative student initiative building solutions to conservation challenges that transform waste into value-added products.',
 };
 
 interface RootLayoutProps {

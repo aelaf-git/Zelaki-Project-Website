@@ -1,42 +1,109 @@
 import Image from 'next/image';
 
+interface TeamMember {
+  name: string;
+  role: string;
+  institution: string;
+}
+
 export default function Testimonials() {
+  const team: TeamMember[] = [
+    {
+      name: 'Dr. India Schneider-Crease',
+      role: 'Professor & Lead PI',
+      institution: 'Arizona State University'
+    },
+    {
+      name: 'Tyler Eglen',
+      role: 'Project Manager',
+      institution: 'Arizona State University'
+    },
+    {
+      name: 'Dr. Araya Abera',
+      role: 'Professor',
+      institution: 'Addis Ababa University / AAiT'
+    },
+    {
+      name: 'Shiferaw Asrat',
+      role: 'Owner, Limalimo Ecolodge',
+      institution: 'Industry Partner'
+    },
+    {
+      name: 'Dr. Samuel Tesfaye',
+      role: 'Professor',
+      institution: 'University of Gondar'
+    }
+  ];
+
   return (
-    <div className="mt-24 flex flex-col-reverse md:flex-row items-start md:space-x-10">
-      <div className="md:w-5/12">
-        <div className="flex items-center space-x-20 mb-5">
-          <span className="border border-gray-300 w-14 absolute" />
-          <h3 className="text-gray-400 tracking-widest text-sm">TESTIMONIAL</h3>
-        </div>
-        <h2 className="font-semibold text-darken text-2xl lg:pr-40">What They Say?</h2>
-        <p className="text-gray-500 my-5 lg:pr-36">
-          Skilline has got more than 100k positive ratings from our users around the world.
+    <div id="team" className="mt-32 scroll-mt-10">
+      {/* Heading */}
+      <div className="max-w-3xl mx-auto text-center mb-16">
+        <span className="text-lime-500 font-bold uppercase tracking-widest text-xs sm:text-sm mb-2 block">
+          The Team
+        </span>
+        <h2 className="text-3xl sm:text-4xl font-bold font-serif text-darken mb-4">
+          A cross-continental collaboration
+        </h2>
+        <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
+          Engineering students, conservation ecologists, and community partners from Arizona State University, Addis Ababa University, Debark University, and Gondar University — designing, building, and iterating together in Addis Ababa.
         </p>
-        <p className="text-gray-500 my-5 lg:pr-36">
-          Some of the students and teachers were greatly helped by the Skilline.
-        </p>
-        <p className="text-gray-500 my-5 lg:pr-36">Are you too? Please give your assessment</p>
-        <button className="flex items-center space-x-3 pl-3 border-b border-l border-t border-yellow-500 text-yellow-500 font-medium my-4 focus:outline-none transform transition hover:scale-110 duration-300 ease-in-out rounded-full">
-          <span>Write your assessment</span>
-          <div className="border border-yellow-500 h-14 w-14 rounded-full flex items-center justify-center">
-            <svg className="w-5 h-5" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.2929L19.3431 0.928934C18.9526 0.538409 18.3195 0.538409 17.9289 0.928934C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM-8.74228e-08 9L25 9L25 7L8.74228e-08 7L-8.74228e-08 9Z"
-                fill="#F48C06"
-              />
-            </svg>
-          </div>
-        </button>
       </div>
-      <div className="md:w-7/12">
-        <Image
-          className="md:w-10/12 mx-auto h-auto"
-          src="/img/testimonials.png"
-          alt="Testimonials"
-          width={600}
-          height={500}
-          style={{ height: 'auto' }}
-        />
+
+      {/* Team Media Row */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        {/* Full Team Image Placeholder */}
+        <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 group">
+          <Image
+            className="w-full h-[280px] sm:h-[350px] object-cover filter saturate-50 hover:saturate-100 transition duration-500"
+            src="/images/shraded-plastics.jpg"
+            alt="Full Zelaki Team"
+            width={600}
+            height={350}
+          />
+          <div className="absolute inset-0 bg-black/45 flex items-end p-6">
+            <span className="text-white text-xs sm:text-sm font-semibold tracking-wide bg-black/60 px-3 py-1.5 rounded">
+              [IMAGE PLACEHOLDER: Group photo of the full team in front of the AAiT sign — from the &quot;Our Team&quot; slide]
+            </span>
+          </div>
+        </div>
+
+        {/* Workshop Image Placeholder */}
+        <div className="relative rounded-2xl overflow-hidden shadow-xl border border-gray-200 group">
+          <Image
+            className="w-full h-[280px] sm:h-[350px] object-cover filter saturate-50 hover:saturate-100 transition duration-500"
+            src="/images/extruder.jpg"
+            alt="Workshop Activities"
+            width={600}
+            height={350}
+          />
+          <div className="absolute inset-0 bg-black/45 flex items-end p-6">
+            <span className="text-white text-xs sm:text-sm font-semibold tracking-wide bg-black/60 px-3 py-1.5 rounded">
+              [IMAGE PLACEHOLDER: Workshop photos showing students building machines — welding, assembling the injection molder frame, testing the extruder]
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* Core Team Members Grid */}
+      <div className="bg-slate-50 rounded-3xl p-8 sm:p-12 border border-slate-100">
+        <h3 className="text-xl sm:text-2xl font-bold font-serif text-darken mb-8 text-center">Project Leadership</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {team.map((member, i) => (
+            <div 
+              key={i} 
+              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition duration-300"
+              data-aos="fade-up"
+              data-aos-delay={i * 50}
+            >
+              <div>
+                <h4 className="font-bold text-lg text-darken mb-1 font-serif">{member.name}</h4>
+                <p className="text-lime-600 text-sm font-semibold mb-2">{member.role}</p>
+              </div>
+              <p className="text-gray-500 text-xs border-t border-gray-100 pt-2 mt-2">{member.institution}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
