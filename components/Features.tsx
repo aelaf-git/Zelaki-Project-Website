@@ -2,8 +2,6 @@ import Image from 'next/image';
 
 interface Product {
   name: string;
-  market: string;
-  marketType: 'Tourist' | 'International' | 'Local' | 'Tourist / International';
   desc: string;
   imageSrc: string;
 }
@@ -12,53 +10,30 @@ export default function Features() {
   const products: Product[] = [
     {
       name: 'Coaster',
-      market: 'Tourist',
-      marketType: 'Tourist',
       desc: 'Injection-molded coaster bearing the walia ibex, the park\'s iconic resident. Sold directly to tourists at Simien Mountains lodges and entry points.',
       imageSrc: '/images/products/coaster.png'
     },
     {
       name: 'Topographic Map',
-      market: 'Tourist / International',
-      marketType: 'Tourist / International',
       desc: '3D-relief map of the Simien plateau, molded from recovered PET plastic. A functional keepsake that tells the story of the landscape.',
       imageSrc: '/images/products/topography-map.png'
     },
     {
       name: 'Jewelry',
-      market: 'International',
-      marketType: 'International',
       desc: 'Beads and pendants hand-finished by the Debark Association of Women with Disabilities, who add value and earn income from the base souvenir pipeline.',
       imageSrc: '/images/products/jewelry.png'
     },
     {
       name: 'Figurine',
-      market: 'Tourist',
-      marketType: 'Tourist',
       desc: 'Molded gelada and walia ibex figurines, the park\'s most recognizable wildlife, cast from the same plastic that once threatened them.',
       imageSrc: '/images/products/figurine.png'
     },
     {
       name: 'Recycled Fiber',
-      market: 'Local',
-      marketType: 'Local',
       desc: 'PET fiber extruded and sold to local textile markets. The fiber pipeline runs parallel to the souvenir pipeline and creates a circular economy product for the Debark and Gondar markets.',
       imageSrc: '/images/products/recycled-fiber.png'
     }
   ];
-
-  const getBadgeClass = (type: string) => {
-    switch (type) {
-      case 'Tourist':
-        return 'bg-blue-100 text-blue-800';
-      case 'Local':
-        return 'bg-green-100 text-green-800';
-      case 'International':
-        return 'bg-indigo-100 text-indigo-800';
-      default:
-        return 'bg-purple-100 text-purple-800';
-    }
-  };
 
   return (
     <div id="products" className="mt-32 scroll-mt-10">
@@ -85,23 +60,18 @@ export default function Features() {
             data-aos-delay={i * 100}
           >
             <div>
-              <div className="relative w-full h-[220px] bg-gray-100">
+              <div className="relative w-full h-[240px] bg-gray-100">
                 <Image
                   src={product.imageSrc}
                   alt={product.name}
                   fill
-                  className="object-contain p-4"
+                  className="object-cover"
                 />
               </div>
 
               {/* Product Content */}
               <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-bold text-xl text-darken font-serif">{product.name}</h3>
-                  <span className={`text-xs px-2.5 py-1 rounded-full font-semibold ${getBadgeClass(product.marketType)}`}>
-                    {product.market}
-                  </span>
-                </div>
+                <h3 className="font-bold text-xl text-darken font-serif mb-3">{product.name}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{product.desc}</p>
               </div>
             </div>

@@ -5,13 +5,13 @@ export default function Integrations() {
     <div id="vision" className="mt-32 scroll-mt-10 flex flex-col lg:flex-row items-center gap-12">
       {/* Map Illustration */}
       <div className="w-full lg:w-1/2" data-aos="fade-right">
-        <div className="relative rounded-2xl overflow-hidden border border-gray-200">
+        <div className="relative rounded-2xl overflow-hidden border border-gray-200 bg-white">
           <Image
-            className="w-full h-[350px] sm:h-[450px] object-cover"
-            src="/images/extruder.jpg"
-            alt="Ethiopia Workshop Expansion Map"
-            width={600}
-            height={450}
+            className="w-full h-auto object-contain"
+            src="/images/vision.png"
+            alt="Zelaki vision for workshop expansion across Ethiopia"
+            width={800}
+            height={600}
           />
         </div>
       </div>
