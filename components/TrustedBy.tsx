@@ -1,7 +1,7 @@
 export default function TrustedBy() {
   const partners = [
     { name: 'Arizona State University', category: 'Academic' },
-    { name: 'Addis Ababa University (AAiT)', category: 'Academic' },
+    { name: 'Addis Ababa College of Technology and Built Environment (CTBE)', category: 'Academic' },
     { name: 'University of Gondar', category: 'Academic' },
     { name: 'Debark University', category: 'Academic' },
     { name: 'Ethiopian Wildlife Conservation Authority', category: 'Government' },

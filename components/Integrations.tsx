@@ -50,7 +50,7 @@ export default function Integrations() {
               </li>
               <li className="flex items-center space-x-2">
                 <span className="text-green-500">✓</span>
-                <span>Addis Ababa (AAiT Workshop)</span>
+                <span>Addis Ababa (CTBE Workshop)</span>
               </li>
             </ul>
           </div>

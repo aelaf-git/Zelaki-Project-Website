@@ -52,7 +52,7 @@ export default function News() {
               rel="noopener noreferrer"
               className="text-slate-400 hover:text-white transition border border-slate-600 rounded-full px-5 py-2"
             >
-              AAiT →
+              CTBE →
             </a>
           </div>
         </div>
